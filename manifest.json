@@ -1,0 +1,36 @@
+{
+  "name": "微博清理大师(屏蔽广告、关键词、用户；时间线排列)",
+  "short_name": "微博清理大师",
+  "version": "0.9.1",
+  "manifest_version": 2,
+  "description": "filter weibo which contains keywords in blacklist",
+  "homepage_url": "https://buyixiao.github.io",
+  "icons":
+	{
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+  "browser_action": {
+    "default_title": "微博清理大师",
+    "default_popup": "popup.html"
+  },
+  "background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://weibo.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": ["request_interceptor.js"]
+}

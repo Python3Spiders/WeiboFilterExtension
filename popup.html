@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <title>微博清理大师</title>
+  <meta charset="UTF-8">
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.tagsinput.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/jquery.tagsinput.css" />
+  <style type="text/css">
+    h5{
+      color: crimson; 
+    }
+    h2,p{
+      text-align: center
+    }
+    input {
+			outline-style: none;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		input:focus {
+			border-color: #66afe9;
+			outline: 0;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+		}
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <h2>微博清理大师</h2>
+    <p>author: buyixiao</p>
+    <h4>添加想要屏蔽的微博/热搜榜关键词</h4>
+    <input name="tags" id="tags" class="keyword" value="foo,bar,baz" />
+    <h4>添加想要屏蔽的微博用户名，注意不是备注名</h4>
+    <input name="tags" id="tags" class="username" value="foo,bar,baz" />
+    <h5>1、可以在上方输入设置。</h5>
+    <h5>2、可以在 web 页面选中文字右键添加设置。</h5>
+    <h5>3、关键词的屏蔽逻辑: 屏蔽 Feed 流中的微博/热搜榜。</h5>
+    <h5>4、用户名的屏蔽逻辑: 屏蔽 Feed 流中该用户的微博。</h5>
+    <h5>5、单个关键词或用户名字符最长限制为 10。</h5>
+    <h5>6、添加后下次刷新页面生效，无效建议重启浏览器。</h5>
+    <h5>7、Feed 按照时间线排序，屏蔽广告，不可配置。</h5>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
