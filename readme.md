@@ -4,6 +4,6 @@ author @ [buyixiao](https://buyixiao.github.io/)
 
 ~~谷歌商城地址：新的商店已经不允许按照程序逻辑修改响应了~~
 
-无法在线安装但是可以离线安装，离线 crx 地址：[WeiboFilter.crx](https://github.com/Python3Spiders/WeiboFilterExtension/blob/main/WeiboFilter.crx)
+无法在线安装但是可以离线安装，离线 crx 地址：[WeiboFilter.crx](https://github.com/Python3Spiders/WeiboFilterExtension/blob/main/WeiboFilterExtension.crx)
 
 ps，离线安装的目测到 2023 年也会失效
